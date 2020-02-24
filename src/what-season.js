@@ -1,6 +1,10 @@
 module.exports = function getSeason(date) {
+  if (date === undefined) return "Unable to determine the time of year!";
+  else if (!(date instanceof Date)) throw Error;
+  else if (isNaN(date)) return "Unable to determine the time of year!";
+
   let month = date.getMonth();
-  if(month === undefined || month === '' || month === ' ') throw 'Unable to determine the time of year!';
+
   if(month === 11 || month < 2){
     return 'winter';
   } 
