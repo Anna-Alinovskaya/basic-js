@@ -1,11 +1,10 @@
-/*const chai = require('chai');
+const chai = require('chai');
 const { expect, assert } = chai;
 it.optional = require('../extensions/it-optional');
 
 Object.freeze(assert);
 
 const createDreamTeam = require('../src/dream-team.js');
-
 
 describe('Dream team', () => {
   // Presence requirement
@@ -222,4 +221,3 @@ describe('Dream team', () => {
     });
   });
 });
-*/
